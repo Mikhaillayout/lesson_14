@@ -1,0 +1,404 @@
+/* ==================== Подключение обнуляющего стиля === (Обнуляет дефолтные настройки) === Начало === 2022-10 ==================== */
+@import "reset.css";
+/* ==================== Подключение обнуляющего стиля === (Обнуляет дефолтные настройки) === Конец === 2022-10 ==================== */
+
+/* ==================== Подключение шрифтов ===  === Начало === 2022-10 ==================== */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+/* ==================== Подключение шрифтов ===  === Конец === 2022-10 ==================== */
+
+/* ==================== Хэдер === (Подробнее) === Начало === 2022-11 ==================== */
+body {
+  font-family: "Lato";
+  font-size: 16px;
+}
+.header {
+  margin: 0px 0px 80px 0px;
+  padding-top: 20px;
+}
+.header__container {
+  max-width: 1230px;
+  min-height: 52px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 10px;
+}
+.logo {
+  font-weight: 900;
+  font-size: 27px;
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: #1e212c;
+  flex: 0 0 130px;
+  margin-right: 60px;
+}
+.logo::after {
+  content: "";
+  min-width: 22px;
+  min-height: 20px;
+  display: inline-block;
+  background: url("../img/icons/logo.svg") 0 0 / cover no-repeat;
+}
+.links-header {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.links-header__link,
+.links-register__link {
+  font-weight: 700;
+  line-height: 1.6;
+  color: #424551;
+}
+.links-header__link {
+  margin-right: 40px;
+}
+.links-header__link_red {
+  color: rgba(255, 63, 58, 1);
+}
+.header__register {
+}
+.register {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 386px;
+  text-align: center;
+  align-items: center;
+}
+.register__button {
+  flex: 1 1 auto;
+}
+.button {
+  padding: 16px 40px;
+  color: white;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+  font-weight: 700;
+}
+.links-register {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.links-register::before {
+  content: "";
+  min-width: 20px;
+  min-height: 20px;
+  display: inline-block;
+  background: url("../img/icons/login.svg") 0 0 no-repeat;
+}
+.links-register::after {
+  content: "/";
+  position: absolute;
+  right: 42%;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #424551;
+}
+/* ==================== Хэдер === (Подробнее) === Конец === 2022-11 ==================== */
+
+/* ==================== Основной блок === (Подробнее) === Начало === 2022-11 ==================== */
+.main {
+  margin: 0px 0px 268px 0px;
+}
+.main__container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.main__header {
+  margin: 0 auto 164px;
+}
+.header-main,
+.header-subscribe {
+  max-width: 810px;
+  text-align: center;
+  color: #1e212c;
+}
+.header-main__subtitle,
+.header-subscribe__subtitle {
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.header-main__title,
+.header-subscribe__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+}
+
+/* ==================== Основной блок === (Подробнее) === Конец === 2022-11 ==================== */
+
+/* ==================== Карточки === (Подробнее) === Начало === 2022-11 ==================== */
+.carts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+  padding: 0 10px;
+}
+.carts__item {
+}
+.item-carts {
+  flex: 1 1 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+}
+.item-carts__data {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5;
+  color: #ff3f3a;
+  margin: 0px 0px 4px 0px;
+}
+.item-carts__time {
+  line-height: 1.6;
+  color: #787a80;
+  margin: 0px 0px 20px 0px;
+}
+.item-carts__title {
+  align-self: stretch;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1e212c;
+  line-height: 1.5;
+  margin: 0px 0px 8px 0px;
+}
+.item-carts__online {
+  line-height: 1.6;
+  color: #787a80;
+  flex: 1 0 auto;
+  margin: 0px 0px 25px 0px;
+}
+.item-carts__button {
+  align-self: stretch;
+}
+
+.button {
+}
+.button_big {
+  display: inline-block;
+  padding: 14px 0;
+  width: 100%;
+  text-align: center;
+}
+.button_inversion {
+  color: #ff3f3a;
+  background: white;
+  border: 1px solid #ff3f3a;
+}
+.item-carts__button:hover .button {
+  color: white;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+}
+/* ==================== Карточки === (Подробнее) === Конец === 2022-11 ==================== */
+
+/* ==================== Subscribe === (Подробнее) === Начало === 2022-11 ==================== */
+.subscribe {
+  min-height: 564px;
+  position: relative;
+}
+.subscribe::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  opacity: 0.2;
+}
+.subscribe__container {
+  padding: 120px 0px 0px 0px;
+  position: relative;
+  z-index: 2;
+  min-height: 564px;
+  background: url("../img/icons/illustration.svg") 0 100% no-repeat,
+    url("../img/icons/illustration.svg") 100% 100% no-repeat;
+}
+.subscribe__header {
+  max-width: 810px;
+  margin: 0 auto;
+}
+/* ==================== Subscribe === (Подробнее) === Конец === 2022-11 ==================== */
+
+/* ==================== Подвал === (Подробнее) === Начало === 2022-11 ==================== */
+.footer {
+  background: #1e212c;
+}
+.footer__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: 80px;
+  padding: 80px 10px 60px 10px;
+}
+.footer__social {
+  flex: 0 1 280px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.footer__logo {
+  margin: 0px 0px 24px 0px;
+  flex: 0 1 auto;
+  line-height: 0;
+}
+.logo_white {
+  color: white;
+}
+.footer__text {
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.6;
+  color: #ffffff;
+
+  flex: 1 1 auto;
+}
+.footer__icon-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+.footer__icon-link {
+  color: white;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.footer__icon-link:nth-child(1):before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: url("../img/icons/facebook.svg") 50% 50% no-repeat;
+}
+.footer__icon-link:nth-child(2):before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: url("../img/icons/Twitter.svg") 50% 50% no-repeat;
+}
+.footer__icon-link:nth-child(3):before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: url("../img/icons/YouTube.svg") 50% 50% no-repeat;
+}
+.footer__icon-link:nth-child(4):before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: url("../img/icons/telegram.svg") 50% 50% no-repeat;
+}
+.footer__icon-link:nth-child(5):before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: url("../img/icons/Instagram.svg") 50% 50% no-repeat;
+}
+.footer__icon-link:nth-child(6):before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: url("../img/icons/Linked-In.svg") 50% 50% no-repeat;
+}
+.footer__site-map {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.footer__title {
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 0px 0px 12px 0px;
+  color: #ffffff;
+}
+
+.footer__link {
+  line-height: 1.6;
+  color: rgb(255, 255, 255, 0.6);
+}
+.footer__courses {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.footer__contact {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.footer__sign {
+  flex: 0 1 280px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: rgb(255, 255, 255, 0.6);
+  row-gap: 12px;
+}
+.footer__sign p {
+  font-size: 10px;
+}
+/* ==================== Подвал === (Подробнее) === Конец === 2022-11 ==================== */
+
+/* ==================== Copyright === (Подробнее) === Начало === 2022-11 ==================== */
+.copyright {
+  background: #292c37;
+}
+.copyright__container {
+  max-width: 1230px;
+  min-height: 52px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 10px;
+  color: white;
+}
+.copyright__container span::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../img/icons/Heart.svg") 0 0 / cover no-repeat;
+  margin: 0 3px;
+}
+.copyright__made {
+  flex: 1 1 288px;
+}
+.copyright__go-to-top {
+  text-transform: uppercase;
+}
+/* ==================== Copyright === (Подробнее) === Конец=== 2022-11 ==================== */
